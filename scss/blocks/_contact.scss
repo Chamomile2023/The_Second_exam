@@ -1,0 +1,59 @@
+.contact{
+    max-width: 100%;
+    &--input{
+        padding: 30px 215px 30px 33px;
+        border: 1px solid $primary-three;
+        margin-left: -45px;
+        border-radius: 10px;
+        outline: none;
+    }
+    &--link{
+        padding: 28px 81px;
+        background-color: $primary-one;
+        border-radius: 10px;
+        color: $primary-four;
+    }
+}
+.sub{
+    margin-left: -45px;
+}
+@media screen and (max-width: 992px){
+    .container{
+        max-width: 928px;
+    }
+    .contact{
+       
+        &--input{
+            padding: 23px 150px 23px 33px;
+            border: 1px solid $primary-three;
+            margin-left: -45px;
+            border-radius: 10px;
+            outline: none;
+        }
+        &--link{
+            padding: 20px 56px;
+            background-color: $primary-one;
+            border-radius: 10px;
+            color: $primary-four;
+        }
+        &--title{
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 80px;
+            color: $primary-one;
+            text-align: center;
+        }
+        &--input{
+            margin-left: -45px;
+        }
+    }
+    .additional_subtitle{
+        max-width: 445px;
+        font-size: 16px;
+        line-height: 24px;  
+    }
+    .about--pic{
+        width: 292px;
+        height: 260px;
+    }
+}
