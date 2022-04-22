@@ -14,6 +14,10 @@
         color: $primary-four;
     }
 }
+.about--pic{
+    width: 446px;
+    height: 396px;
+}
 .sub{
     margin-left: -45px;
 }
@@ -22,6 +26,7 @@
         max-width: 928px;
     }
     .contact{
+       
        
         &--input{
             padding: 23px 150px 23px 33px;
@@ -55,5 +60,8 @@
     .about--pic{
         width: 292px;
         height: 260px;
+    }
+    .three{
+        margin-left: -350px;
     }
 }
