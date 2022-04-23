@@ -65,7 +65,7 @@
     &--img2{
         max-width: 293px;
         height: 293px;
-        margin: 4px 19px 0 122px;
+        margin: -10px 19px 0 122px;
     }
     &--img3{
         max-width: 371px;
@@ -172,4 +172,159 @@
         .click{
             margin-top: 15px;
         }
+}
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: 688px;
+    }
+    .skill{
+        &__cards{
+            margin: 56px 0;
+        }
+        &--title{
+            font-size: 30px;
+        }
+        &__card_1{
+            max-width: 223px;
+            height: 662px;
+        }
+        &--img1{
+            max-width: 214px;
+            height: 214px;
+        }
+        &--heading{
+            padding-left: 40px;
+            font-size: 20px;
+        }
+        &--subtitle{
+            font-size: 13px;
+            line-height: 20px;
+        }
+        &__btn{
+            padding: 14px 42px;
+        }
+        &--link{
+            font-size: 16px;    
+            line-height: 24px;
+        }
+        &__card-in1{
+            max-width: 223px;
+            height: 442px;
+            background: $primary-six;
+            border-radius: 10px; 
+            margin-right: 18px;
+        }
+        &--img2{
+            max-width: 200px;
+            height: 200px;
+            margin: 0px;
+        }
+        &--img3{
+            max-width: 216px;
+            height: 200px;
+        }
+        &__card-inner2{
+            max-width: 465px;
+            height: 200px;
+            margin-right: 18px;
+            margin-top: 20px;
+        }
+        &--img4{
+            max-width: 202px;
+            height: 134px;
+            margin: 44px 25px 44px 0;
+        }
+    }
+    .skill--heading{
+        padding-left: 30px;
+    }
+    .skill__btn{
+        margin-left: 30px;
+    }
+    .additi{
+        margin-top: 10px;
+    }
+    .inner__text{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        max-width: 510px;
+    }
+    .skill{
+        &__cards{
+            display: block;
+            position: relative;
+            margin-bottom: 500px;
+        }
+        &--title{
+            font-size: 30px;
+        }
+        &__card_1{
+            max-width: 240px;
+            height: 534px;
+            margin-bottom: 10px;
+        }
+        &--img1{
+            max-width: 185px;
+            height: 185px;
+            margin-left: 18px;
+        }
+        &--heading{
+            padding-left: 40px;
+            font-size: 18px;
+        }
+        &--subtitle{
+            padding: 0 25px 0 40px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__btn{
+            padding: 13px 53px;
+            background-color: $primary-two;
+            border: none;
+            border-radius: 5px; 
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        &--link{
+            font-weight: 500;
+            font-size: 14px;    
+            line-height: 21px;
+            color: $primary-five;
+        }
+        &__card-in1{
+            max-width: 240px;
+            height: 400px;
+            margin-right: 18px;
+           
+        }
+        &__card-inner1{
+            display: flex;
+        }
+        &--img2{
+            max-width: 198px;
+            height: 132px;
+            margin: -10px 19px 0 22px;
+        }
+        &--img3{
+            max-width: 206px;
+            height: 132px;
+        }
+        &__card-inner2{
+            display: block;
+            max-width: 240px;
+            height: 534px;
+            background: $primary-six;
+            border-radius: 10px; 
+            margin-left: 255px;
+            margin-top: -945px;
+        }
+        &--img4{
+            max-width: 206px;
+            height: 137px;
+            margin: 100px 10px 44px 10px;
+        }
+    }
 }

@@ -8,10 +8,11 @@
     &__nav{ 
         display: flex;
         margin: auto;
-        justify-content: space-between;
         padding: 35px 0;
+        position: relative;
     }
     &--logo{
+        width: 15%;
         font-weight: 400;
         font-size: 36px;
         line-height: 54px;
@@ -21,11 +22,14 @@
         color: $primary-three;
     }
     &__list{
-        max-width: 517px;
-        width: 50%;
+        
         display: flex;
-        justify-content: space-between;
-        margin: auto;
+    }
+    &--item{
+        padding: 0 15px;
+    }
+    &__btn{
+       margin-left: auto;
     }
     &--link{
         font-weight: 500;
@@ -39,6 +43,7 @@
     
     &__phone-link{
         padding: 17px 57px;
+        margin: 0 15px 0 0;
         border: 2px solid $primary-two;
         border-radius: 5px;
         font-weight: 500;
@@ -46,13 +51,47 @@
         line-height: 30px;
         color: $primary-two;
     }
+    .nav{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-top: 10px;
+    }
 }
+.nav-toggler{
+    height: 30px;
+    width: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+}
+.nav-toggler .line1, .line2{
+    display: block;
+    width: 30px;
+    border: 2px solid $primary-one;
+    position: relative;
+    border-radius: 2px;
+}
+.nav-toggler .line3{
+    width: 22px;
+    border: 2px solid $primary-one;
+    border-radius: 2px;
+}
+#nav-check{
+    visibility: hidden;
+}
+
+
+
+
 @media screen and (max-width: 992px){
      .container{
         max-width: 928px;
         }
         .header{
-       
+            width: 100%;
         &--link{
             font-size: 16px;
             line-height: 24px;
@@ -67,7 +106,80 @@
             line-height: 45px;
         }
         &__list{
-            max-width: 412px;
+          width: 100%;
         }
 }
+}
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 688px;
+    }
+    .header{
+        width: 100%;
+        &__nav{
+            position: relative;
+        }
+        &--item{
+            padding-bottom: 10px;
+            display: block;
+            margin: 0;
+        }
+        &__phone-link{
+            display: block;
+            position: absolute;
+            display: block;
+            left: 0;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            left: 0;
+        }
+    }
+    .nav{
+        height: 270px;
+        z-index: 100;
+        background-color: #fff;
+    }
+    .nav-toggler{
+        height: 34px;
+        width: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 0;  
+        margin-top: 6px;  
+    }
+    .header .nav{
+        position: absolute;
+            display: block;
+            top: 90%;
+            left: 0;
+            border-top: 1px solid $primary-three;
+            border-bottom: 1px solid $primary-three;
+            padding-top: 20px;
+            visibility: hidden;
+    }
+    .header #nav-check:checked ~ .nav{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header #nav-check:checked ~ .nav-toggler span{
+        background-color: transparent;
+    }
+}
+@media screen and (max-width:575px){
+    .container{
+        max-width: 510px;
+    }
+    .about{
+        display: none;
+    }
+    .pricing{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
 }

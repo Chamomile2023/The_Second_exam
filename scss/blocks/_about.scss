@@ -17,7 +17,7 @@
     &--pic{
         max-width: 500px;
         height: 500px;
-        margin-top: 90px;
+        margin-top: 0px;
     }
 }
 .additional_subtitle{
@@ -61,5 +61,37 @@
     .skill--title{
         font-size: 36px;
         line-height: 80px;
+    }
+}
+@media screen and (max-width:767px){
+    .container{
+        max-width: 688px;
+    }
+}
+@media screen and (max-width:567px){
+    .container{
+        max-width: 510px;
+    }
+    .about{
+        &__hero, &__items{
+            display: flex;
+        }
+        &__hero{}
+        &__item{
+            text-align: center;
+        }
+        &__items{
+            justify-content: space-between;
+            margin-left: -20px;
+        }
+        &__hero{
+            justify-content: space-between;
+            margin: 150px 0 60px 0;
+        }
+        &--pic{
+            max-width: 500px;
+            height: 500px;
+            margin-top: 0px;
+        }
     }
 }

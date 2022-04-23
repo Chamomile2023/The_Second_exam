@@ -65,3 +65,34 @@
         margin-left: -350px;
     }
 }
+@media screen and (max-width:767px){
+    .container{
+        max-width: 688px;
+    }
+    .contact{
+        &--input{
+            padding: 14px 120px 14px 24px;
+            border: 1px solid $primary-three;
+            margin-left: -45px;
+            border-radius: 10px;
+            outline: none;
+        }
+        &--link{
+            padding: 15px 40px;
+            background-color: $primary-one;
+            border-radius: 10px;
+            color: $primary-four;
+        }
+    }
+    .about--pic{
+        width: 217px;
+        height: 194px;
+    }
+    .sub{
+        margin-left: -55px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+
+}

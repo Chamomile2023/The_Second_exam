@@ -79,3 +79,52 @@
         max-width: 273px;    
 }
 }
+@media screen and (max-width:767px){
+    .container{
+        max-width: 688px;
+    }
+    .pricing{
+        &__card{
+            max-width: 220px;
+            height: 440px;
+        }  
+        &--img1{
+                width: 197px;
+                height: 197px;
+            }
+        &--img2{
+                width: 219px;
+                height: 197px;
+            }
+        &--img3{
+                width: 210px;
+                height: 197px;
+            }
+            &--span{
+                max-width: 205px;
+                height: 45px;
+                padding-left: 15px;
+                font-size: 16px;
+                line-height: 24px;
+                margin-left: 30px;
+                margin-top: 40px;
+                padding-top: 8px;
+            }
+            &--number{
+                font-size: 22px;
+                line-height: 30px;
+                padding-top: 10px;
+            }
+    }
+    .pricing--img1{
+        margin: 0 10px;
+    }
+    .pricing--img2, .pricing--img3{
+        margin-top: 0;
+    }
+    .add_s{
+        max-width: 600px;
+        height: 95px;
+    }
+
+}

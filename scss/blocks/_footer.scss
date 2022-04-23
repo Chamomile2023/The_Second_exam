@@ -32,3 +32,27 @@
     }
     }
 }
+@media screen and (max-width:767px){
+    .container{
+        max-width: 688px;
+    }
+    .footer{
+        &__line{
+            width: 688px;
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        max-width: 510px;
+    }
+    .footer{
+        &__line{
+            width: 510px;
+        }
+        &--link{
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

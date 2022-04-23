@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
+    <script src="https://kit.fontawesome.com/421b7b042b.js"     crossorigin="anonymous"></script>
     <title>Britlex</title>
 </head>
 
@@ -13,7 +14,14 @@
     <header class="header">
         <div class="container">
             <div class="header__nav">
-                <a href="#" class="header--logo">Brit<span class="header--color">lex</span></a>
+                <a href="#" class="header--logo">Brit<span class="header--color">lex</span></a> 
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                </label>
+               <nav class="nav">
                 <ul class="header__list">
                     <li class="header--item">
                         <a href="#" class="header--link">Home</a>
@@ -31,7 +39,10 @@
                         <a href="#" class="header--link">Contacts</a>
                     </li>
                 </ul>
+               <div class="header__btn">
                 <a href="Tel: +998900000000" class="header__phone-link">Let’s Talk</a>
+               </div>
+               </nav>
             </div>
         </div>
     </header>
@@ -167,7 +178,7 @@
             <div class="pricing__hero">
                 <div class="pricing__card">
                     <img src="./img/pricing_1.png" alt="pricing" class="pricing--img1">
-                    <h3 class="skill--heading">Self-study online course</h3>
+                    <h3 class="skill--heading">Self-study course</h3>
                     <p class="skill--subtitle add_s">
                         Start learning English online in live classes
                         with qualified EC teachers and students
